@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --soft-pink: #fde4ec;
+  --medium-pink: #f9a8d4;
+  --accent-pink: #f472b6;
+  --creme: #fff0f6;
+  --warm-creme: #fce4ec;
+  --text-dark: #2d3748;
+  --text-medium: #4a5568;
+  --text-light: #718096;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--creme) 0%, var(--soft-pink) 100%);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #f9a8d4, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(249, 168, 212, 0.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-pink), #f9a8d4);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(249, 168, 212, 0.3);
+}
+
+.btn-secondary {
+  background: var(--warm-creme);
+  color: #f472b6;
+  border: 2px solid var(--medium-pink);
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--medium-pink);
+  color: white;
+  transform: translateY(-2px);
+}
